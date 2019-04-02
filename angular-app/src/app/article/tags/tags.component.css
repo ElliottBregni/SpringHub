@@ -1,0 +1,19 @@
+
+.tags > ul {
+    list-style: none
+
+}
+ul  {
+    padding-top: 20px;
+    display: inline;
+}
+.tags {
+    height: 84px;     /* Allow the centering to work */
+	margin: 0 auto
+}
+.tags {
+    height: 84px;
+}
+.sub {
+    right:40px;
+}

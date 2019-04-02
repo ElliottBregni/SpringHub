@@ -1,0 +1,42 @@
+.page-results {
+    margin-left:30px;
+    width:100%;
+
+}
+.toppagination{
+    
+}
+.Articlecontent {
+    width:400px;
+    height: 30px;
+    white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+ /*border: solid;*/
+}
+.sortby {
+    margin-top:-95px;
+
+    z-index: 0;
+}
+.rightcol {
+ 
+    float:left;
+  
+}
+.pagination {
+ 
+}
+.sort{
+    float:right;
+    margin-left:20px;
+}
+.datatable{
+margin-top:0px;
+}
+.sort{
+    float:right;
+}
+ul > a {
+    margin:0px;
+}

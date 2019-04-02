@@ -1,0 +1,26 @@
+.addArticle {
+    margin-left:20%;
+    margin-right:20%;
+    
+}
+.addArticle {
+    width:60%;
+    
+
+}
+form{
+    padding: 10px, 10px, 10px, 10px
+}
+.title {
+    width: 30%;
+}
+.text-editor{
+    height:100%;
+}
+.category {
+    width:20%;
+}
+.type {
+    margin-left:20%;
+    margin-top:10px;
+}

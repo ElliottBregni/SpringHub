@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row">
+      
+      <!--Breadcrumb nav bar-->
+      <div class="col-xs-12 col-md-12">
+          <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a [routerLink]="['/home']">Home</a></li>
+                  <li class="breadcrumb-item"><a [routerLink]="['/User']">User Profile</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Edit User Profile </li>
+              </ol>
+          </nav>
+      </div>
+      <!--End breadcrumb-->
+  </div>
+  <!--End Row-->
+  <br><br>
+
+  <!--MAIN ROW CONTENT-->
+  <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+          <!--CHANGE NOTIFICATION SETTING-->
+          <div class="alert alert-primary">
+              <h5 id="notification">Notification setting</h5>
+          </div>
+
+          <div>
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"> </span>
+              </label>
+              <span>Email</span>
+          </div>
+
+          <div>
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+              </label>
+              <span> New Message</span>
+          </div>
+
+          <div>
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+              </label>
+              <span>New Alert</span>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Update notification</button>
+          <button type="reset" class="btn btn-secondary">Cancel</button>
+
+      </div>
+  </div>

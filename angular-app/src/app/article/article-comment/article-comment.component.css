@@ -1,0 +1,57 @@
+.img{
+    width: 30px;
+    height: 20px;
+    margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+
+.btn-group{
+    vertical-align: initial;
+}
+
+
+.full-width{
+    width:60%;
+}
+
+.mat-form-field {
+    display: block; 
+    position: relative;
+    text-align: left;
+}
+.comment-header {
+    display: inline-block;
+ 
+    float:left;
+}
+p {
+    font-family: sans-serif;
+}
+#content{
+    float:left;
+    margin-left:100px;
+    float: inherit;
+    margin-left: 120px;
+    bottom: 200px;
+    padding:10px,10px,10px,10px;
+}
+.DateTime{
+    font-size: 10px;
+}
+.username{
+    position: relative;
+    margin-top:0px;
+    bottom: 20px
+}
+.card{
+    margin-bottom:10px;
+    }
+    .comment-header{
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+    .btn btn-primary{
+        float:right;
+    }

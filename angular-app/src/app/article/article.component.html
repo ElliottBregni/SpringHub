@@ -1,0 +1,49 @@
+
+      
+<div class="article-page">
+    
+  <div class="banner">
+
+      <div class="container">
+        <!--AuthGuard for editing>-->
+        <div [hidden]="canModify()" ><a  [routerLink]="['/editor', article.Article.id] " >Edit Article</a></div>  
+
+     
+        <div>
+            <div class="subscribe">
+                <app-subscribe ArticleId="{{article.Article.id}}"></app-subscribe>
+            </div>
+        <h1>{{article.Article.title}}</h1>
+        <div [innerHTML]="article.Article.user.image | mardown: 'html'"></div>
+        <p>Author:<em>{{article.Article.user.username}}</em></p>
+        <p>Deparment:<em>{{article.Article.user.department.departmentName}}</em></p>
+
+        </div>
+        <!--ArticleContent-->
+        <div class="content">
+          <div class="row article-content">
+            <div class="col-md-12">
+            <div class="card"[innerHTML]="article.Article.content | mardown: 'html'"></div>
+            </div>
+        </div>
+        </div>
+       
+            <div class="tags" >
+                <app-tags [Subscription]=subResult ArticleId="{{article.Article.id}}"></app-tags>
+          </div>
+        
+        
+          <app-article-comment [Article] = article.Article></app-article-comment>
+                <!--comments-->
+            <!--<div class="card comments" *ngFor="let a of article.Article.comments" >
+                <div class="card"[innerHTML]="a.user.image | mardown: 'html'"></div>
+                  <a [routerLink]="['/User', a.id] ">{{a.user.username}}</a>
+                  <p>{{a.commentContent}}</p>
+                  <p>{{a.commentDateTime}}</p>
+            </div>-->
+             
+           
+  </div>  
+  </div>
+  </div>
+

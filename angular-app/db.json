@@ -1,0 +1,38 @@
+{
+    "Articles" : [ {
+        "url": "" ,
+		"title": "Joe Rogan Video",
+		"id": 20,
+		"type": "",
+		"content": "<p><iframe frameborder=\"0\" src=\"//www.youtube.com/embed/OT0ZIq-yWEM\" width=\"640\" height=\"360\" class=\"note-video-clip\"></iframe><br></p>",
+		"date": "2019-02-07T02:01:28.030+0000",
+		"categoryId": 1,
+		"departmentId": 1,
+		"authorId": 4,
+		"franchiseId": 1,
+		"createdAt": "2019-02-07T02:01:28.030+0000",
+		"archiveId": 0,
+		"slug": "",
+		"favorited": "true",
+		"updatedAt":"2019-02-07T02:01:28.030+0000",
+		"favoriteCount": 23,
+			"tags":[
+				"",
+				""
+				
+			],
+		"body": "",
+		"Description": ""
+		} 
+    ],
+	"Users": [{
+	"id": "",
+	
+	
+	
+	
+	}
+	
+	
+  }
+  

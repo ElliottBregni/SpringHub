@@ -1,0 +1,12 @@
+<div class="tags">
+<ul class="tag list-inline"*ngFor="let a of nonSubArr">
+<li class="list-inline-item"><button mat-raised-button (click)="Subscribe(a.tagID)" value="a.tagID"  attr.id="sub-{{a.tagID}}" class="noSub">
+  {{a.tagContent}}
+</button></li>
+</ul>
+<ul class=" sub  tag list-inline" class="tag" *ngFor="let a of SubArray">
+    <li class="list-inline-item"><button mat-raised-button color="accent" (click)="UnSubscribe(a.tagID)" value="a.tagID" attr.id="unsub-{{a.tagID}}" class="sub">
+      {{a.tagContent}}
+    </button></li>
+</ul>
+</div>

@@ -1,0 +1,7 @@
+
+<mat-form-field>
+  <mat-label>sort</mat-label>
+  <mat-select [(ngModel)]="selectedValue">
+    <mat-option *ngFor="let val of values" [value]="val.value">{{val.title}}</mat-option>
+  </mat-select>
+</mat-form-field>

@@ -1,0 +1,115 @@
+<div class="page-results">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-md-2"></div>
+                <!--<app-search  (search)="onSearch($event)" text="Type your text here" [data]=results></app-search>-->
+                <!--<div class="col-xs-8 col-md-8">
+                    <!--Create a search box at the center of the page
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control" placeholder="Enter keyword or phrase">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <!--End Search box
+                </div>-->
+                
+                </div><!--End Sort By-->
+                <div class="col-xs-2 col-md-2"></div>
+            </div>
+    
+            <br><br>
+    
+            <!--CREATE LEFT SIDE COLUMN-->
+            <div class="row">
+                <div class="col-xs-3 col-md-3 ">
+                    <h5>Filter your Search</h5>
+                    <div class="card mt-4">
+    
+                        <!--START VIDEO COLUMN-->
+                        <div class="card-header font-weight-bold">Article or Videos</div>
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Articles <span class="badge badge-success"> (19)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Videos <span class="badge badge-success"> (10)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div> <!--END VIDEO COLUMN-->
+                   
+    
+                    <!--START CATEGORY COLUMN-->
+                    <div class="card mt-4">
+                        <div class="card-header font-weight-bold">Category</div>
+    
+                        <div class="card-body">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Training Skill <span class="badge badge-success"> (19)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Labor Safety <span class="badge badge-success"> (10)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Road Skill <span class="badge badge-success"> (10)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END CATEGORY COLUMN-->
+    
+                    <button class="btn btn-block btn-primary" type="submit">Search</button>
+    
+                </div>
+                <!--END LEFT SIDE COLUMN-->
+    
+                <!--START RIGHT SIDE COLUMN-->
+                <div class="col-xs-8 offset-xs-1 col-md-8 offset-md-1">
+                    <!--Create Top pagination on the left-->
+                    <!--<app-pagination></app-pagination>-->
+                    <!--Nested Row for Sort by column-->
+                    <div class="row">
+                        <div class="col-xs-3 col-md-3"></div>
+                        <div class="col-xs-3 col-md-3"></div>
+    
+                        <!--Start Sort By-->
+                        <div class="col-xs-6 col-md-6">
+                    
+                        
+                    </div> <!--End Nested Row-->
+                   
+    
+                    <!--START THE TABLE SECTION-->
+                    <div>
+                            <app-results slug="Slug" [results]="results"></app-results>
+                      </div>  
+                 
+                </div>
+    
+                <!--RIGHT SIDE PAGINATION-->
+  
+                <!--<ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>-->
+                
+                <!--END RIGHT PAGINATION-->
+            </div>
+        </div>
+        </div>

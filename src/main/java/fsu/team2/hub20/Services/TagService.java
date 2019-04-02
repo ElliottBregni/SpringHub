@@ -1,0 +1,24 @@
+package fsu.team2.hub20.Services;
+
+import java.util.Date;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import fsu.team2.hub20.models.tag;
+@Service
+public interface TagService {
+	
+	public List<tag> getAllTags();
+	public void addTag(tag tag, String aT);
+	//public Optional<tag> getTag(long id);
+	public Optional<tag> getTag(int id);
+
+
+
+	
+
+}

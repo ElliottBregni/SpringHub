@@ -1,0 +1,223 @@
+<div  class='main-nav'>
+
+     
+  <div class='navbar navbar-inverse'>
+    <div class='navbar-header desktopnav'>
+    <div class="icon-bar"> <app-icon-bar></app-icon-bar></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color text-white ">
+
+        <!--Create toggle button when reduce screen size-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Resources']">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MWC2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reports and Dashboards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Project']">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/Training']">Training</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Create Search box-->
+            <form action="search.html" method="GET" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+  <!--Desktop nav-->
+  <!--<div [hidden]='!shownav()'>
+    <div class='clearfix'></div>
+    <div class='navbar-collapse collapse'>
+      <ul class='nav navbar-nav'>
+        <!--<li [routerLinkActive]="['link-active']">
+          <a [routerLink]="['/home']">
+            <span class='glyphicon glyphicon-home'></span> Home
+          </a>
+        </li>
+        <!--<li [routerLinkActive]="['link-active']">
+          <a [routerLink]="['/Article']">
+            <span class='glyphicon glyphicon-th-list'></span> Article
+          </a>
+        </li>
+        <li><!-- note the ng-init and ng-click here: 
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+              <span class='glyphicon glyphicon-th-list'></span>
+              Resources
+            </button>
+            <div class="dropdown-content">
+              <a [routerLink]="['/home']">Home</a>
+              <a [routerLink]="['/Articles/1/createdAt']">All articles
+              </a>
+              <a [routerLink]="['/AddArticle']">Add Article</a>
+            </div>
+          </div> 
+        </li>
+        <li><!-- note the ng-init and ng-click here: 
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+              <span class='glyphicon glyphicon-th-list'></span> MWC2
+            </button>
+            <div class="dropdown-content">
+              <a [routerLink]="['/UserProfile']">Category
+              </a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+            </div>
+          </div> 
+        </li>
+        <li><!-- note the ng-init and ng-click here: 
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+              <span class='glyphicon glyphicon-th-list'></span>Reports and Dashboards
+            </button>
+            <div class="dropdown-content">
+              <a [routerLink]="['/BiReport']">Reports
+              </a>
+              <a href="#">Category</a>
+              <a href="#">Category</a>
+            </div>
+          </div> 
+        </li>
+        <li><!-- note the ng-init and ng-click here: 
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+              <span class='glyphicon glyphicon-th-list'></span> Project
+            </button>
+            <div class="dropdown-content">
+              <a [routerLink]="['/Articles']">Category
+              </a>
+             
+          
+              <a [routerLink]="['/article/12']">Category</a>
+              <a href="#">Category</a>
+            </div>
+          </div> 
+        </li>
+        <li><!-- note the ng-init and ng-click here: 
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+              <span class='glyphicon glyphicon-th-list'></span> Training
+            </button>
+            <div class="dropdown-content">
+              <a [routerLink]="['/home']">Category
+              
+              </a>
+              <a [routerLink]="['/Articles']">Category
+              </a>
+              <a [routerLink]="['/AddArticle']">Category</a>
+            </div>
+          </div> 
+        <li class='pull-right' > 
+
+            <button class="SearchBtn" (click)=showSearch()><i class="glyphicon glyphicon-search"></i>
+              <span class="label label-danger"></span></button>
+          </li>
+       
+      </ul>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+  <!--Mobile nav
+  <div [hidden]='shownav()'>
+      <nav class="navbar navbar-default visible-xs" role="navigation" id="">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-ex2-collapse" style="padding: 8px 15px;"> <span class="sr-only">Toggle navigation</span>
+                  <span aria-hidden="true" class="glyphicon glyphicon-sort"></span>
+              </button>                
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                      <li><a href="#">Link 3</a></li>
+                      <li><a href="#">Link 4</a></li>
+                    </ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Career</a></li>
+               </ul>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex2-collapse">
+              <div class="col-xs-12">
+                  <ul>
+                      <li><span class="social"><a href="#"><i aria-hidden="true" class="glyphicon glyphicon-tags"></i></a></span></li>
+                      <li><span class="social"><a href="#"><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i></a></span></li>
+                      <li><span class="social"><a href="#"><i aria-hidden="true" class="glyphicon glyphicon-music"></i></a></span></li>
+                      <li><span class="social"><a href="#"><i aria-hidden="true" class="glyphicon glyphicon-trash"></i></a></span></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12">
+                  <form class="navbar-form qu-from" role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </nav>
+</div>
+    <!--End of Mobile nav
+
+
+
+
+
+
+    <!--End of Mobile nav
+
+  <mat-sidenav-container
+    class="example-container" (backdropClick)="close('backdrop')" *ngIf="shouldRun">
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+  </mat-sidenav>
+-->

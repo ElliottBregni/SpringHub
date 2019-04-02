@@ -1,0 +1,143 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3 col-md-3 justify-content-start mt-2">
+            <a href="#"><img class="img-responsive" src="/assets/images/logo.jpg" alt="Logo" width="120" height="60"></a>
+        </div>
+
+        <div class="col-xs-3 col-md-3"></div>
+        <!--<div ng-if="show" class="nav navbar-brand pull-right rightnav dropdown">
+                <button class="logoutBtn" (click)="logout()">logout</button>
+                <a href="#" >
+                  <!--i class="glyphicon glyphicon-bell"></i>
+                  <span class="label label-danger"></span>
+                  <div class="dropdown-content">
+                  
+                  </div>
+                </a>
+            </div>
+            <div class="nav navbar-brand pull-right rightnav dropdown">
+                <i class="glyphicon glyphicon-user"></i>
+                   <span class="label label-danger"></span>
+                  <div class="dropdown-content">
+                      <a [routerLink]="['/User']">Profile</a>
+                 
+                      <a><button class="logoutBtn" (click)="logout()">logout</button></a>
+                  </div>
+                
+            </div>
+            
+            <div class="nav navbar-brand pull-right rightnav dropdown">
+                    <a [routerLink]="['/calendar']"><i class="glyphicon glyphicon-calendar"></i>
+                      <span class="label label-danger"></span></a>
+              
+              
+          </div>
+          <div [hidden]='!admin()' class="nav navbar-brand pull-right rightnav dropdown">
+            <a [routerLink]="['/ContentManager']"> {{User.roles.designationType}}
+                 <span class="label label-danger"></span></a>
+              
+          </div>-->
+        <!--START TOP RIGHT ICON BAR-->
+        <!--<div class="col-xs-6 col-md-6 mt-2">
+            <ul class="nav justify-content-end">
+    
+                            <a [hidden]='!admin()'  [routerLink]="['/ContentManager']"> {{User.roles.designationType}}
+                                 <span class="label label-danger"></span></a>
+                              
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="glyphicon glyphicon-user" style="font-size: 2em;"></i></a>
+                </li>
+
+                <!--DROPDOWN LIST WITH MOUSE HOVER
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#"><i class="fas fa-link"></i> </a>
+                    <div class="dropdown-content">
+                        <a href="#">Training</a>
+                        <a href="#">Support</a>
+                        <a href="#">Tools</a>
+                        <a href="#">Resources</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                    <div class="dropdown-content">
+                        <a href="userProfile.html">View profile</a>
+                        <a href="#">Manage account</a>
+                        <a href="#">Add article</a>
+                        <a href="#">Log out</a>
+                    </div>
+                </li>
+                <!--END MOUSE HOVER-
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+                <div ng-if="show" class="nav navbar-brand pull-right rightnav dropdown">
+                        <button class="logoutBtn" (click)="logout()">logout</button>
+                        <a href="#" >
+                          <!--i class="glyphicon glyphicon-bell"></i>
+                          <span class="label label-danger"></span>
+                          <div class="dropdown-content">
+                          
+                          </div>
+                        </a>
+                </div>
+
+
+            </ul>
+        </div>
+        <!--END ICON BAR-->
+        <app-icon-bar></app-icon-bar>
+    
+    <br>
+
+    <!--START MAIN NAV BAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color text-white ">
+
+        <!--Create toggle button when reduce screen size-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MWC2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reports and Dashboards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Training</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <!--Create Search box-->
+            <form action="search.html" method="GET" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--END MAIN NAV BAR-->

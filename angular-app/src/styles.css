@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/flatpickr/dist/flatpickr.min.css';
+@import url( 'https://fonts.googleapis.com/css?family=Roboto:400,700|Material+Icons');
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Main CSS */
+/*
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: lightblue;    
+}
+*/
+#logo{
+    width: 280px;
+  
+    fill:white;
+}
+#logo img {
+    fill: white;
+
+}
+
+/*Header Navbar*/
+.bg-dark {
+  background-color: lightblue;
+}
+
+.bg-light {
+  background-color: rgb(33, 17, 71) !important;
+  font-weight: bold;
+}
+
+.my-navlink {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: white !important;
+}
+
+.custom-link {
+  background-color: rgb(33, 17, 71) !important;
+}
+
+
+.jumbotron {
+  margin-bottom: 0px;
+
+  font-weight: bold;
+  height: 140px;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+  .jumbotron h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif san-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+li {
+  font-family: Helvetica, Arial, san-serif;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: white;
+}
+
+.aside-content {
+  padding: 20px;
+  background-color: white;
+}
+
+.navbar-dark {
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

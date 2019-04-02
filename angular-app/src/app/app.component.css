@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  .body-content {
+    padding-top: 10px;
+  }
+}
+
+#row1 {
+  
+  width: 100%;
+}
+/*
+.flatpickr-calendar.hasTime.animate.showTimeInput {
+  visibility: hidden;
+}*/
+                                                  
+.Row  {
+ 
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+
+}
+.container-fluid{
+    margin-top:5%;
+    
+}
+.rightcol {
+    margin-top:10px;
+}
+.mains{
+  padding: 10px,10px,10px,10px;
+}
+#row1{
+  padding: 10px,10px,10px,10px;
+}
+@media screen and (max-width: 600px) {
+
+  .form-control {
+      width: auto;
+  }
+  .dropdown {
+      display: none;
+  }
+}
+.container-fluid{
+  margin-top:170px;
+  width: 100%;
+  
+}

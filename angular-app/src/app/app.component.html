@@ -1,0 +1,28 @@
+<div class='container-fluid'>
+    <div class="Row">
+        <!--bug in ng-show evaluates with two conditions-->
+    </div>
+    <!--<div [hidden]='shownavMobile()'class='col-sm-12' ><mobile-nav></mobile-nav></div>-->
+        <div class='col-sm-12'>
+            <nav-menu [hidden]="!shownav()" (buttonClicked)='showSearchComponent($event)'>   
+            </nav-menu>
+        </div>
+        
+  
+    <div class="Row" id="row1">
+            
+        <div class="mains" class="col-sm-12">
+            <!--<div [hidden]='showSearch()'>-->
+            
+            <!--</div>-->
+                <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+    
+</div>
+<footer class="bg-color mt-5">
+    <p class="text-white text-center">Copy right &copy TMT 2019</p>
+
+</footer>

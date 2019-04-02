@@ -1,0 +1,21 @@
+<div>
+<div class="md-form active-cyan-2 mb-3">
+        <label>Search filter</label>
+        <input class="searchFilter" [(ngModel)]="searchText" placeholder="search text goes here">
+</div>
+<div>
+<app-pagination [values]=sort [data]=results></app-pagination>
+</div>
+<table class="table table-striped">
+    <div *ngFor="let a of results| filter : searchText" >
+    <tr>
+        <td>
+            <dt [routerLink]="['/article', a.id]">{{a.title}}</dt>
+            <dd>Lorem ipsum dolor sit amet, et option volumus fastidii sed, mei causae docendi at. Ius ei modus intellegat. In ornatus impedit vix, per fugit neglegentur in. Nonumes indoctum ei nam, his id verear iudicabit pertinacia. Vocent gubergren ad quo. Quo ad clita recusabo, his case atomorum ei.
+
+                    Ex melius graecis his, ne ancillae comprehensam eam. Per et legere veritus. Eu qui lorem copiosae dissentiunt, ullum integre eu vim. Vix nusquam propriae eu, ea duo illud falli, sed ipsum forensibus et. Mazim everti adversarium ea pri, quo eu vide facer nihil. Duo aliquip scaevola ne. Vis suas definitionem at, sed ad elitr integr</dd>
+        </td>
+    </tr>
+</div>
+</table>
+</div>

@@ -1,0 +1,22 @@
+<form name="form" (ngSubmit)="f.form.valid && onSubmit() && form.resetForm()" #f="ngForm">
+
+      <mat-form-field>
+          <textarea matInput placeholder="Leave a comment" class="form-control full-width"  name="comment"id="comment" [(ngModel)]="form.comment" class="comment class" ></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="btn btn-primary"  type="sumbit">Share</button>
+</form>
+
+    
+<div class="card comments" *ngFor="let a of asyncResult" >
+    <div class="comment-header">
+    <p class="img" [innerHTML]="a.user.image | mardown: 'html'"></p>
+    </div>
+    <div id="content">
+    <a class="username" [routerLink]="['/User', a.id]">{{a.user.username}}</a>
+    
+      <div class="CommentBody">
+      <p class="CommentContent">{{a.commentContent}}</p>
+      <p class="DateTime">{{a.commentDateTime}}</p>
+      </div>
+    </div>
+</div>

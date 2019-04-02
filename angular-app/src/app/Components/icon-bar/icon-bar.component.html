@@ -1,0 +1,42 @@
+<div class="topnav">
+<a class="logoImg navbar-brand .svg" id="logo" data-src="../../../assets/images/logo.svg" [routerLink]="['/home']">
+</a>
+
+<div id="icon">
+        
+<div class="nav navbar-brand pull-right rightnav dropdown">
+        <i class="fas fa-user"></i> <mat-icon svgIcon="person"></mat-icon>
+
+       <span class="label label-danger"></span>
+      <div class="dropdown-content">
+          <a [routerLink]="['/User']">Profile</a>
+     
+          <a><button class="logoutBtn" (click)="logout()">logout</button></a>
+      </div>
+    
+</div>
+
+<div class="nav navbar-brand pull-right rightnav dropdown">
+        <a [routerLink]="['/calendar']"><i class="fas fa-calendar-alt"></i>
+          <span class="label label-danger"></span></a>
+  
+  
+</div>
+<div [hidden]='!admin()' class="nav navbar-brand pull-right rightnav dropdown">
+<a [routerLink]="['/ContentManager']"> {{User.roles.designationType}}
+     <span class="label label-danger"></span></a>
+     <div ng-if="show" class="nav navbar-brand pull-right rightnav dropdown">
+        <button class="logoutBtn" (click)="logout()">logout</button>
+        <a href="#" >
+          <!--i class="glyphicon glyphicon-bell"></i>-->
+          <span class="label label-danger"></span>
+          <div class="dropdown-content">
+          
+          </div>
+        </a>
+    </div>
+    
+</div>
+</div>
+<!---->
+</div>
